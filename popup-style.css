@@ -1,0 +1,122 @@
+/* ================================================= */
+/* --- ESTILOS CSS PARA O POP-UP DE FRANQUIA --- */
+/* ================================================= */
+
+/* Estilos do Overlay (fundo escuro) */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 25, 47, 0.85); /* Usa o mesmo efeito de fundo do seu header */
+    backdrop-filter: blur(5px);
+    display: none; /* Começa escondido */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Estilo para quando o popup estiver visível */
+.popup-overlay.show {
+    display: flex;
+    opacity: 1;
+}
+
+/* Conteúdo do Pop-up */
+.popup-content {
+    background-color: var(--azul-card); /* <<< COR ADAPTADA */
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #1d2d44;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    font-family: var(--fonte-corpo); /* <<< FONTE ADAPTADA */
+}
+
+.popup-overlay.show .popup-content {
+    transform: scale(1);
+}
+
+.popup-header h2 {
+    font-family: var(--fonte-titulo); /* <<< FONTE ADAPTADA */
+    color: var(--branco-texto); /* <<< COR ADAPTADA */
+    margin-top: 0;
+    font-size: 2rem; /* Tamanho ajustado */
+}
+
+/* Remove a linha de baixo do h2 que vem do estilo global */
+.popup-header h2::after {
+    display: none;
+}
+
+.popup-content p {
+    color: var(--cinza-texto); /* <<< COR ADAPTADA */
+    margin-bottom: 25px;
+}
+
+/* Botão de Fechar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    color: var(--cinza-texto); /* <<< COR ADAPTADA */
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: var(--branco-texto); /* <<< COR ADAPTADA */
+}
+
+/* Estilo do Formulário do Pop-up (adaptado para o seu tema) */
+#franchise-form .form-group label {
+    color: var(--cinza-texto); /* <<< COR ADAPTADA */
+    font-size: 0.9rem;
+}
+
+#franchise-form .form-group input {
+    background-color: var(--azul-marinho-fundo); /* <<< COR ADAPTADA */
+    border: 1px solid #1d2d44; /* <<< COR ADAPTADA */
+    color: var(--branco-texto); /* <<< COR ADAPTADA */
+    font-family: var(--fonte-corpo); /* <<< FONTE ADAPTADA */
+}
+
+#franchise-form .form-group input::placeholder {
+    color: #5a6988; /* <<< COR ADAPTADA */
+}
+
+#franchise-form .form-group input:focus {
+    outline: none;
+    border-color: var(--azul-ciano-destaque); /* <<< COR ADAPTADA */
+}
+
+/* Botão de CTA (Call-to-Action) do Pop-up */
+#franchise-form .cta-button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--azul-ciano-destaque); /* <<< COR ADAPTADA */
+    color: var(--azul-marinho-fundo); /* <<< COR ADAPTADA */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+#franchise-form .cta-button:hover {
+    background-color: var(--branco-texto); /* <<< EFEITO ADAPTADO */
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.5);
+}

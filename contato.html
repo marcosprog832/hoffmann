@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Hoffmann Soluções Tecnológicas</title>
+    <link rel="stylesheet" href="solucoes.css"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">HOFFMANN<p>Soluções Tecnologicas</p></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="historia.html">Nossa História</a></li>
+                    <li><a href="index.html#servicos">Soluções</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="politica.html">Política</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="container" id="contato-form-section">
+            <h2>Solicite um Orçamento</h2>
+            <p>Preencha os campos abaixo e nossa equipe entrará em contato para projetar a solução ideal para você.</p>
+            
+            <form id="whatsapp-form" class="contact-form">
+                <div class="form-group">
+                    <label for="nome">Seu Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Seu WhatsApp (com DDD)</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Ex: 66999998888" required>
+                </div>
+                <div class="form-group">
+                    <label for="orcamento">Qual solução você busca?</label>
+                    <textarea id="orcamento" name="orcamento" rows="5" placeholder="Descreva sua necessidade..." required></textarea>
+                </div>
+                <button type="submit" class="cta-button whatsapp-button">
+                    <i class="fab fa-whatsapp"></i> Enviar via WhatsApp
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Hoffmann. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/hoffmann.tecnologia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/hoffmannsolucoestecnologicassinop" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B5566999747552&" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('whatsapp-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const numeroTelefone = '5566999747552'; // Removido o + para evitar problemas de codificação
+            const nome = document.getElementById('nome').value;
+            const telefone = document.getElementById('telefone').value;
+            const orcamento = document.getElementById('orcamento').value;
+            const textoMensagem = `Olá, Hoffmann!\nMeu nome é ${nome}.\nMeu telefone é ${telefone}.\n\nTenho interesse em um orçamento para:\n"${orcamento}"`;
+            const mensagemCodificada = encodeURIComponent(textoMensagem);
+            const linkWhatsApp = `https://wa.me/${numeroTelefone}?text=${mensagemCodificada}`;
+            window.open(linkWhatsApp, '_blank');
+        });
+    </script>
+
+</body>
+</html>

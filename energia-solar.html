@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia Solar de Alta Performance - Hoffmann</title>
+    
+    <link rel="stylesheet" href="solucoes.css"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">HOFFMANN<p>Soluções Tecnologicas</p></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#hero">Início</a></li>
+                    <li><a href="historia.html">Nossa História</a></li>
+                    <li><a href="index.html#servicos">Soluções</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="politica.html">Política</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <div class="feature-showcase">
+
+            <section class="feature-block image-left">
+                <div class="feature-image-container">
+                    <img src="imagens_carrosel/solares.jpeg" alt="Engenheiro analisando plantas de um projeto solar">
+                </div>
+                <div class="feature-text-container">
+                    <h3>Análise de Viabilidade e Projeto</h3>
+                    <p>Estudamos seu perfil de consumo e a irradiação solar do seu local para projetar um sistema sob medida, otimizado para o máximo de economia e eficiência.</p>
+                    <ul>
+                        <li>Cálculo preciso do Retorno sobre o Investimento (ROI)</li>
+                        <li>Design customizado para seu telhado ou terreno</li>
+                        <li>Escolha dos melhores equipamentos para seu caso</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="feature-block image-right">
+                <div class="feature-image-container">
+                    <img src="imagens_carrosel/solar.jpg" alt="Equipe profissional instalando painéis solares em um telhado">
+                </div>
+                <div class="feature-text-container">
+                    <h3>Instalação com Equipamentos de Ponta</h3>
+                    <p>Trabalhamos apenas com painéis solares e inversores de marcas líderes mundiais, garantindo décadas de performance. Nossa equipe de instalação é certificada e segue as mais rigorosas normas de segurança.</p>
+                    <ul>
+                        <li>Máxima eficiência na conversão de energia</li>
+                        <li>Garantia estendida dos fabricantes</li>
+                        <li>Instalação rápida, segura e limpa</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="feature-block image-left">
+                <div class="feature-image-container">
+                    <img src="imagens_carrosel/solar2.avif" alt="Smartphone mostrando um aplicativo de monitoramento de energia solar">
+                </div>
+                <div class="feature-text-container">
+                    <h3>Burocracia Zero e Controle Total</h3>
+                    <p>Cuidamos de todo o processo de homologação do seu sistema junto à concessionária de energia. Após a instalação, você monitora a geração de energia em tempo real pelo seu celular.</p>
+                    <ul>
+                        <li>Processo completo, sem dor de cabeça para você</li>
+                        <li>Acompanhamento da economia na palma da mão</li>
+                        <li>Relatórios de performance e sustentabilidade</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="service-cta">
+            <div class="container">
+                <h2>Projete Sua Independência Energética</h2>
+                <a href="contato.html" class="button-cta">Solicite um Orçamento Fotovoltaico</a>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+        const hiddenElements = document.querySelectorAll('.feature-block');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+
+</body>
+</html>

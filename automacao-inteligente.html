@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automação Inteligente - Hoffmann</title>
+    
+    <link rel="stylesheet" href="solucoes.css"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">HOFFMANN<p>Soluções Tecnologicas</p></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#hero">Início</a></li>
+                    <li><a href="historia.html">Nossa História</a></li>
+                    <li><a href="index.html#servicos">Soluções</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="politica.html">Política</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+       
+
+        <div class="feature-showcase">
+
+            <section class="feature-block image-left">
+                <div class="feature-image-container">
+                    <img src="imagens_carrosel/Iluminacao.jpg" alt="Sala de estar com iluminação inteligente e personalizável">
+                </div>
+                <div class="feature-text-container">
+                    <h3>Iluminação Cênica e Inteligente</h3>
+                    <p>Crie a atmosfera perfeita para cada momento. Controle a intensidade e a cor das luzes, programe horários para acender e apagar, e economize energia com sensores de presença.</p>
+                    <ul>
+                        <li>Criação de cenas personalizadas (Jantar, Cinema, Leitura)</li>
+                        <li>Controle total por aplicativo ou assistentes de voz</li>
+                        <li>Redução de custos com energia elétrica</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="feature-block image-right">
+                <div class="feature-image-container">
+                    <img src="imagens_carrosel/clima.jpeg" alt="Cortinas motorizadas em uma grande janela de vidro">
+                </div>
+                <div class="feature-text-container">
+                    <h3>Controle de Clima e Conforto</h3>
+                    <p>Ligue o ar condicionado antes mesmo de chegar em casa. Programe suas cortinas para abrirem com o nascer do sol. Nossos sistemas inteligentes mantêm a temperatura ideal e otimizam a luz natural.</p>
+                    <ul>
+                        <li>Máximo conforto térmico e visual</li>
+                        <li>Gerenciamento inteligente do ar condicionado</li>
+                        <li>Cortinas e persianas motorizadas e programáveis</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="feature-block image-left">
+                <div class="feature-image-container">
+                    <img src="imagens_carrosel/interterimento.avif" alt="Home theater com sistema de som integrado e iluminação ambiente">
+                </div>
+                <div class="feature-text-container">
+                    <h3>Segurança e Entretenimento Integrados</h3>
+                    <p>Conecte suas fechaduras, câmeras e alarmes em um único sistema. Transforme sua sala em um cinema com o controle de som e vídeo na palma da sua mão. </p>
+                    <ul>
+                        <li>Receba notificações de segurança em tempo real</li>
+                        <li>Distribuição de áudio e vídeo para múltiplos ambientes</li>
+                        <li>Controle universal para todos os seus equipamentos</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="service-cta">
+            <div class="container">
+                <h2>Projete um Futuro mais Inteligente</h2>
+                <a href="contato.html" class="button-cta">Converse com um Especialista em Automação</a>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+        const hiddenElements = document.querySelectorAll('.feature-block');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+
+</body>
+</html>

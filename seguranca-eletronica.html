@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automação Inteligente - Hoffmann</title>
+    
+    <link rel="stylesheet" href="solucoes.css"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">HOFFMANN<p>Soluções Tecnologicas</p></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#hero">Início</a></li>
+                    <li><a href="historia.html">Nossa História</a></li>
+                    <li><a href="index.html#servicos">Soluções</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="politica.html">Política</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+
+        <div class="feature-showcase">
+
+            <section class="feature-block image-left">
+                <div class="feature-image-container">
+                    <img src="imagens_carrosel/fechadura.jpg" alt="Fechadura digital moderna em uma porta">
+                </div>
+                <div class="feature-text-container">
+                    <h3>Fechaduras Eletrônicas e Biométricas</h3>
+                    <p>Abandone as chaves. Nossas fechaduras inteligentes oferecem acesso por biometria, senha, tag ou celular, registrando cada entrada e saída para uma segurança auditável.</p>
+                    <ul>
+                        <li>Controle de acesso preciso</li>
+                        <li>Elimina o risco de chaves perdidas ou copiadas</li>
+                        <li>Design moderno que valoriza seu imóvel</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="feature-block image-right">
+                <div class="feature-image-container">
+                    <img src="imagens_carrosel/cameras.png" alt="Câmera de segurança de alta definição em uma parede">
+                </div>
+                <div class="feature-text-container">
+                    <h3>CFTV com Inteligência Artificial</h3>
+                    <p>Nossos sistemas de vigilância vão além de simplesmente gravar. Com IA, eles detectam movimentos suspeitos, reconhecem padrões e enviam alertas em tempo real para o seu dispositivo.</p>
+                    <ul>
+                        <li>Monitoramento 24/7 em alta definição</li>
+                        <li>Análise de vídeo inteligente</li>
+                        <li>Acesso remoto às imagens de qualquer lugar do mundo</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="feature-block image-left">
+                <div class="feature-image-container">
+                    <img src="imagens_carrosel/facial.webp" alt="Pessoa usando um cartão de acesso em um leitor de parede">
+                </div>
+                <div class="feature-text-container">
+                    <h3>Controle de Acesso Corporativo</h3>
+                    <p>Defina quem pode acessar cada ambiente e em quais horários. Nossas soluções de controle de acesso são ideais para empresas, condomínios e áreas restritas, integrando catracas, portas e elevadores.</p>
+                    <ul>
+                        <li>Hierarquia de permissões personalizável</li>
+                        <li>Relatórios detalhados de acesso</li>
+                        <li>Integração com sistemas de ponto e segurança</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="feature-block image-right">
+                <div class="feature-image-container">
+                    <img src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=2070" alt="Sensor de alarme moderno instalado em uma parede branca">
+                </div>
+                <div class="feature-text-container">
+                    <h3>Alarmes Inteligentes e Conectados</h3>
+                    <p>Sensores de presença, abertura e impacto que se comunicam com nossa central de monitoramento 24h e com seu smartphone. Qualquer violação gera uma resposta imediata.</p>
+                    <ul>
+                        <li>Detecção precisa de invasões</li>
+                        <li>Acionamento silencioso ou sonoro</li>
+                        <li>Botão de pânico para emergências</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="service-cta">
+            <div class="container">
+                <h2>Projete a Fortaleza do seu Negócio</h2>
+                <a href="contato.html" class="button-cta">Fale com um Especialista em Segurança</a>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        // Este script adiciona a classe 'visible' aos elementos quando eles aparecem na tela
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.2 // A animação começa quando 20% do elemento está visível
+        });
+
+        const hiddenElements = document.querySelectorAll('.feature-block');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+
+</body>
+</html>
