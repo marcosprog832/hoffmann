@@ -13,9 +13,9 @@ import redesCard from './assets/images/redes-card.jpg';
 
 function App() {
   // Números de WhatsApp configurados (com o 55 do Brasil na frente)
-  const whatsAppSinop = "5566999747552";
+  const whatsAppSinop = "5566996067392";
   const whatsAppSorriso = "5566992230604";
-  const whatsAppCascavel = "554599193467";
+  const whatsAppCascavel = "5545984286252";
 
   return (
     <div className="font-sans antialiased">
@@ -364,11 +364,11 @@ function App() {
       <footer className="py-12 border-t border-gray-800 bg-dark-card text-gray-500 text-sm">
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0 text-center md:text-left">
-            <p className="font-bold text-white text-lg">HOFFMANN Soluções Tecnológicas</p>
+            <p className="font-bold text-white text-lg">Hoffmann Soluções Tecnológicas</p>
             <p>Tecnologia de ponta em MT e PR</p>
           </div>
           <div className="text-center md:text-right">
-            <p>&copy; 2026 Hoffmann. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Hoffmann Tecnologia. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
