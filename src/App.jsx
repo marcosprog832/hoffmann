@@ -60,25 +60,28 @@ function App() {
                     Sua vida em <br /> Alta Performance.
                 </h1>
             </div>
-{/* LADO DIREITO: AJUSTE FINO PARA BAIXO E DIREITA */}
-            <div className="max-w-[320px] w-full lg:text-right self-end mb-4 lg:mb-6 ml-auto lg:-mr-10 xl:-mr-20">
-                <p className="text-gray-200 mb-8 text-lg font-light leading-relaxed">
-                  Sustentabilidade e conforto validados por + de 7 mil clientes que escolheram a Hoffmann para integrar inteligência e tranquilidade ao seu patrimônio no MT e PR.
-                </p>
-                
-                <div className="flex flex-col lg:items-end gap-5">
-                    <a href="#solucoes" className="bg-primary hover:bg-accent text-white font-bold px-10 py-4 rounded-xl transition transform hover:scale-105 shadow-lg shadow-primary/20 w-full lg:w-auto text-center inline-block">
-                        {/* Texto do botão agora com azul Indigo forte */}
-                        <span className="text-indigo-900 font-black">Descubra nossas Tecnologias</span>
-                    </a>
-                    
-                    <div className="text-gray-400 text-sm flex items-center justify-center lg:justify-end gap-2">
-                        <span className="hidden lg:inline">Controle Inteligente na Palma da Mão</span>
-                        <i className="fas fa-check-circle text-accent"></i>
-                        <span className="lg:hidden">Controle Inteligente na Palma da Mão</span>
-                    </div>
-                </div>
-            </div>
+{/* LADO DIREITO: EFEITO DE ESCALA PARA "SENSAÇÃO DE ZOOM 90%" */}
+<div className="w-full lg:w-[320px] lg:text-right self-end mb-6 ml-auto lg:-mr-5 xl:-mr-10 flex flex-col items-end transform lg:scale-90 origin-right">
+    <p className="text-gray-200 mb-6 text-base font-light leading-relaxed w-full opacity-90">
+        Integração inteligente de sistemas de <span className="text-accent font-semibold">energia solar</span>, 
+        <span className="text-accent font-semibold"> automação residencial</span>, 
+        <span className="text-accent font-semibold"> segurança eletrônica</span> e 
+        <span className="text-accent font-semibold"> som ambiente</span>. 
+        <br /><br />
+        <span className="text-white font-bold">+ de 7 mil clientes</span> usufruindo da tecnologia de ponta no MT e PR.
+    </p>
+    
+    <div className="flex flex-col items-end gap-4 w-full">
+        <a href="#solucoes" className="bg-primary hover:bg-accent text-indigo-950 font-black px-8 py-3 rounded-xl transition transform hover:scale-105 shadow-lg shadow-primary/20 w-full text-center inline-block whitespace-nowrap text-sm uppercase tracking-wider">
+            Descubra nossas Tecnologias
+        </a>
+        
+        <div className="text-indigo-400 text-xs font-bold flex items-center justify-end gap-2 drop-shadow-md whitespace-nowrap uppercase tracking-tighter">
+            <span>Controle Inteligente na Palma da Mão</span>
+            <i className="fas fa-check-circle text-accent text-base"></i>
+        </div>
+    </div>
+</div>
         </div>
         
         {/* Gradiente suave na parte inferior */}
@@ -189,7 +192,7 @@ function App() {
           </div>
         </div>
       </section>
-    {/* --- SEÇÃO: VOZ DO CLIENTE (VERSÃO COMPACTA E MINIMALISTA) --- */}
+   {/* --- SEÇÃO: DEPOIMENTOS REAIS (DADOS DOS PRINTS) --- */}
       <section id="depoimentos" className="py-20 px-6 bg-dark">
         <div className="container mx-auto">
           <div className="text-center mb-12">
@@ -200,28 +203,29 @@ function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             
-            {/* Card de Depoimento Compacto */}
             {[
-              { icon: "fa-house-user", color: "text-accent", border: "hover:border-accent", text: "Toda a minha casa foi automatizada pela Hoffmann. A praticidade e o controle no celular são indescritíveis. Equipe técnica excelente!", city: "Sinop/MT" },
-              { icon: "fa-tractor", color: "text-yellow-600", border: "hover:border-gold", text: "Instalei som ambiente na sede da fazenda. Qualidade acústica impressionante e sistema fácil de usar. Vale cada centavo!", city: "Sorriso/MT" },
-              { icon: "fa-shield-alt", color: "text-red-500", border: "hover:border-red-500", text: "Segurança eletrônica do condomínio impecável. Câmeras com IA e biometria melhoraram muito nossa gestão.", city: "Cascavel/PR" },
-              { icon: "fa-solar-panel", color: "text-yellow-400", border: "hover:border-yellow-400", text: "Usina solar na minha empresa com redução imediata na conta. Engenharia de ponta que faz a diferença.", city: "Sinop/MT" },
-              { icon: "fa-store", color: "text-accent", border: "hover:border-accent", text: "Automatizamos a climatização da rede de lojas. Economia absurda e ambientes muito mais confortáveis.", city: "Sorriso/MT" },
-              { icon: "fa-hotel", color: "text-purple-500", border: "hover:border-purple-500", text: "Wi-Fi corporativo e controle de acesso no hotel perfeitos. Rede estável e atendimento profissional.", city: "Cascavel/PR" }
+              { nome: "Marcos Santos", icon: "fa-shield-check", color: "text-accent", text: "Conheci através de indicação, gostei muito do atendimento e disponibilidade, nunca se negou a prestar apoio ou assistência quer seja na garantia ou fora dela." },
+              { nome: "Marlon Ferri", icon: "fa-check-double", color: "text-green-500", text: "Fui atendido de forma rápida prática e com execução de qualidade, e ótimo atendimento." },
+              { nome: "Cicero Silva", icon: "fa-bolt", color: "text-yellow-500", text: "Ótimo atendimento e agilidade nos serviços. E profissionalismo." },
+              { nome: "Mayza Leal", icon: "fa-award", color: "text-gold", text: "Ótimo atendimento, equipamentos de excelentes marcas e muito responsáveis caso surja alguma assistência." },
+              { nome: "Márcio Claudenir", icon: "fa-thumbs-up", color: "text-blue-500", text: "Empresa de referência, já indiquei à amigos e a satisfação foi garantida!" },
+              { nome: "Marlon Pacheco", icon: "fa-star", color: "text-orange-500", text: "Serviço de qualidade e ótimo atendimento!" }
             ].map((item, index) => (
-              <div key={index} className={`glass p-6 rounded-2xl border border-gray-800/50 flex flex-col items-center text-center transform hover:scale-[1.02] transition duration-300 ${item.border} hover:shadow-lg`}>
-                <div className="w-14 h-14 rounded-full bg-dark/50 border border-gray-800 flex items-center justify-center mb-4">
-                  <i className={`fas ${item.icon} text-2xl ${item.color}`}></i>
+              <div key={index} className="glass p-6 rounded-2xl border border-gray-800/50 flex flex-col h-full transform hover:scale-[1.02] transition duration-300 hover:border-gray-700">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-full bg-dark/50 border border-gray-800 flex items-center justify-center">
+                    <i className={`fas ${item.icon} text-lg ${item.color}`}></i>
+                  </div>
+                  <div className="text-left">
+                    <h4 className="text-white font-bold text-sm">{item.nome}</h4>
+                    <div className="flex text-gold text-[10px]">
+                      <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
+                    </div>
+                  </div>
                 </div>
-                
-                <p className="text-gray-400 font-light leading-relaxed text-sm mb-4 italic">
+                <p className="text-gray-400 font-light leading-relaxed text-sm italic flex-grow">
                     "{item.text}"
                 </p>
-                
-                <div className="mt-auto">
-                    <h4 className="text-white font-bold text-base">Cliente Hoffmann</h4>
-                    <p className="text-gray-600 text-[10px] uppercase tracking-widest">{item.city}</p>
-                </div>
             </div>
             ))}
 
