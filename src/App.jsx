@@ -68,7 +68,7 @@ function App() {
         <span className="text-accent font-semibold"> segurança eletrônica</span> e 
         <span className="text-accent font-semibold"> som ambiente</span>. 
         <br /><br />
-        <span className="text-white font-bold"> Validaddo por + de 7 mil clientes</span> usufruindo da tecnologia de ponta no MT e PR.
+        <span className="text-white font-bold"> Validado por + de 7 mil clientes</span> usufruindo da tecnologia de ponta no MT e PR.
     </p>
     
     <div className="flex flex-col items-end gap-4 w-full">
