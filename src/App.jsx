@@ -53,35 +53,36 @@ function App() {
             
             {/* LADO ESQUERDO: Títulos Principais (MAIS PARA CIMA) */}
             <div className="max-w-xl w-full text-left self-start lg:mt-10">
-                <h2 className="text-gold font-bold tracking-[0.3em] uppercase text-sm mb-4 animate-pulse">
+                <h2 className="text-[#020817] font-bold tracking-[0.3em] uppercase text-sm mb-4 animate-pulse">
                     Automação Tecnológica Exclusiva
                 </h2>
-                <h1 className="text-5xl md:text-7xl font-black leading-tight tracking-tighter hero-title-sharp">
+                <h1 className="text-[#020817] text-5xl md:text-7xl font-black leading-tight tracking-tighter hero-title-sharp">
                     Sua vida em <br /> Alta Performance.
                 </h1>
             </div>
-{/* LADO DIREITO: EFEITO DE ESCALA PARA "SENSAÇÃO DE ZOOM 90%" */}
-<div className="w-full lg:w-[320px] lg:text-right self-end mb-6 ml-auto lg:-mr-5 xl:-mr-10 flex flex-col items-end transform lg:scale-90 origin-right">
-    <p className="text-gray-200 mb-6 text-base font-light leading-relaxed w-full opacity-90">
-        Integração inteligente de sistemas de <span className="text-accent font-semibold">energia solar</span>, 
-        <span className="text-accent font-semibold"> automação residencial</span>, 
-        <span className="text-accent font-semibold"> segurança eletrônica</span> e 
-        <span className="text-accent font-semibold"> som ambiente</span>. 
-        <br /><br />
-        <span className="text-white font-bold"> Validado por + de 7 mil clientes</span> usufruindo da tecnologia de ponta no MT e PR.
-    </p>
-    
-    <div className="flex flex-col items-end gap-4 w-full">
-        <a href="#solucoes" className="bg-primary hover:bg-accent text-indigo-950 font-black px-8 py-3 rounded-xl transition transform hover:scale-105 shadow-lg shadow-primary/20 w-full text-center inline-block whitespace-nowrap text-sm uppercase tracking-wider">
-            Descubra nossas Tecnologias
-        </a>
-        
-        <div className="text-indigo-400 text-xs font-bold flex items-center justify-end gap-2 drop-shadow-md whitespace-nowrap uppercase tracking-tighter">
-            <span>Controle Inteligente na Palma da Mão</span>
-            <i className="fas fa-check-circle text-accent text-base"></i>
-        </div>
-    </div>
-</div>
+
+            {/* LADO DIREITO: EFEITO DE ESCALA PARA "SENSAÇÃO DE ZOOM 90%" */}
+            <div className="w-full lg:w-[320px] lg:text-right self-end mb-6 ml-auto lg:-mr-5 xl:-mr-10 flex flex-col items-end transform lg:scale-90 origin-right">
+                <p className="text-[#020817] mb-6 text-base font-light leading-relaxed w-full opacity-90">
+                    Integração inteligente de sistemas de <span className="text-[#020817] font-semibold">energia solar</span>, 
+                    <span className="text-[#020817] font-semibold"> automação residencial</span>, 
+                    <span className="text-[#020817] font-semibold"> segurança eletrônica</span> e 
+                    <span className="text-[#020817] font-semibold"> som ambiente</span>. 
+                    <br /><br />
+                    <span className="text-[#020817] font-bold tracking-[0.3em] uppercase text-xs mb-4 opacity-80"> Validado por + de 7 mil clientes</span> usufruindo da tecnologia de ponta no MT e PR.
+                </p>
+                
+                <div className="flex flex-col items-end gap-4 w-full">
+                    <a href="#solucoes" className="bg-[#020817] hover:bg-[#0a192f] text-white font-black px-8 py-3 rounded-xl transition transform hover:scale-105 shadow-lg w-full text-center inline-block whitespace-nowrap text-sm uppercase tracking-wider">
+                        Descubra nossas Tecnologias
+                    </a>
+                    
+                    <div className="text-[#020817] text-xs font-bold flex items-center justify-end gap-2 drop-shadow-md whitespace-nowrap uppercase tracking-tighter">
+                        <span>Controle Inteligente na Palma da Mão</span>
+                        <i className="fas fa-check-circle text-[#020817] text-base"></i>
+                    </div>
+                </div>
+            </div>
         </div>
         
         {/* Gradiente suave na parte inferior */}
