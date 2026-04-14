@@ -127,14 +127,14 @@ body {
 
 .tech-card:hover { 
   transform: translateY(-5px); 
-  border-color: #00c3ff; 
+  border-color: #01ffeab1; 
   box-shadow: 0 10px 30px rgba(0, 195, 255, 0.1); 
 }
 
 /* Título da Hero que Pop */
 .hero-title-sharp {
-  color: #ffffff; /* Branco Puro para máximo contraste */
-  text-shadow: 0 2px 8px rgba(0, 195, 255, 0.3); /* Sombra azul elétrica sutil para profundidade */
+  color: #0400ff85; /* Branco Puro para máximo contraste */
+  text-shadow: 0 2px 8px rgba(0, 255, 119, 0.729); /* Sombra azul elétrica sutil para profundidade */
 }
 
 /* Textos com Gradiente (Removido do Título da Hero) */

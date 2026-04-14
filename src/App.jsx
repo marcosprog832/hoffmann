@@ -56,7 +56,7 @@ function App() {
                 <h2 className="text-[#020817] font-bold tracking-[0.3em] uppercase text-sm mb-4 animate-pulse">
                     Automação Tecnológica Exclusiva
                 </h2>
-                <h1 className="text-[#020817] text-5xl md:text-7xl font-black leading-tight tracking-tighter hero-title-sharp">
+                <h1 className="text-[#2307f4e8] text-5xl md:text-7xl font-black leading-tight tracking-tighter hero-title-sharp">
                     Sua vida em <br /> Alta Performance.
                 </h1>
             </div>
